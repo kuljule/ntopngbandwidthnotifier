@@ -3,6 +3,7 @@
 --
 
 -- This lua script is basically the same as do_export_data.lua except this bypasses the csrf token to allow you to export the data without the csrf token.
+-- Put this script in pfsense directory /usr/local/share/ntopng/scripts/lua/
 
 dirs = ntop.getDirs()
 package.path = dirs.installdir .. "/scripts/lua/modules/?.lua;" .. package.path
