@@ -42,4 +42,8 @@ php /home/testubuntu/JSON2CSV-master/json2csv.php --file=/home/testubuntu/ntop_r
 
 # Connect to a mysql database called bandwidth and run commands in ntop_redroom.txt.
 # These commands import the csv file into a mysql table named ntop_redroom.
-mysql -u radius -pradius1234 bandwidth < '/home/testubuntu/ntop_redroom.txt'
+username=""
+password=""
+database=""
+
+mysql -u $username -p$password $database < '/home/testubuntu/ntop_redroom.txt'
